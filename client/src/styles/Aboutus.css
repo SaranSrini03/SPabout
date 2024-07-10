@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --black: #1A1A1A;
+    --gray: #1E1E1E;
+    --green: #CAFF33;
+    --white: #ffffff;
+    --lightwhite: #686868;
+}
+
+body {
+    background-color: var(--black);
+    font-family: "Lexend", sans-serif;
+}
+
+.AboutPageHeroSec {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    margin: 120px;
+    flex-wrap: wrap;
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecLeft {
+    width: 45%;
+    height: 400px;
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecLeft > .title {
+    line-height: 70px;
+    font-size: 48px;
+    color: var(--white);
+    margin: 0px;
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecLeft > .title > .title2 {
+    line-height: 70px;
+    font-size: 48px;
+    color: var(--green);
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecLeft > .subtitle {
+    color: var(--lightwhite);
+    font-weight: 300;
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecLeft > button {
+    color: var(--black);
+    background-color: var(--green);
+    border: none;
+    outline: none;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.AboutPageHeroSec > .AboutPageHeroSecRight {
+    width: 45%;
+    height: 400px;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin: 0px 30px;
+}
+
+.AboutPageOurStory {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    margin: 100px;
+    flex-wrap: wrap;
+}
+
+.AboutPageOurStory > .AboutPageOurStoryLeft {
+    width: 40%;
+    height: 400px;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin: 0px 30px;
+}
+
+.AboutPageOurStory > .AboutPageOurStoryRight {
+    width: 45%;
+    height: 400px;
+    border-radius: 20px;
+    margin: 100px 10px;
+}
+
+.AboutPageOurStory > .AboutPageOurStoryRight > .title {
+    color: var(--green);
+    font-size: 38px;
+}
+
+.AboutPageOurStory > .AboutPageOurStoryRight > .subtitle {
+    color: var(--lightwhite);
+    font-weight: 300;
+}
+
+.ourValues {
+    width: 100%;
+    height: 200px;
+    margin: 0px 100px;
+}
+
+.ourValues > .title {
+    text-align: center;
+    color: var(--white);
+    font-size: 38px;
+}
+
+.ourValues > .subtitle {
+    text-align: center;
+    width: 50%;
+    margin: 0px 25%;
+    color: var(--lightwhite);
+}
+
+.visionMission {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 400px;
+    margin-top: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.vision {
+    margin: 150px;
+    padding: 50px;
+    height: 400px;
+    width: 400px;
+    background-color: var(--gray);
+}
+
+.vision > .title {
+    font-size: 38px;
+    color: var(--green);
+}
+
+.vision > .subtitle {
+    color: var(--lightwhite);
+    font-weight: 300;
+}
+
+.mission > .title {
+    font-size: 38px;
+    color: var (--green);
+}
+
+.mission > .subtitle {
+    color: var(--lightwhite);
+    font-weight: 300;
+}
+
+.mission {
+    height: 400px;
+    padding: 50px;
+    width: 400px;
+    background-color: var(--gray);
+}
+
+.choose {
+    display: flex;
+    width: 90%;
+    height: 400px;
+    margin: 120px;
+    flex-wrap: wrap;
+}
+
+.choose > .chooseLeft {
+    margin: 250px 20px;
+    width: 45%;
+    height: 400px;
+}
+
+.choose > .chooseLeft > .title {
+    text-align: right;
+    line-height: 38px;
+    font-size: 48px;
+    color: var(--white);
+    margin: 0px;
+}
+
+.choose > .chooseLeft > .subtitle {
+    text-align: right;
+    color: var(--lightwhite);
+    font-weight: 300;
+}
+
+.choose > .chooseRight {
+    width: 45%;
+    height: 400px;
+    background-color: var(--gray);
+    border-radius: 20px;
+    margin: 50px 60px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .AboutPageHeroSec,
+    .AboutPageOurStory,
+    .choose {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .AboutPageHeroSec > .AboutPageHeroSecLeft,
+    .AboutPageHeroSec > .AboutPageHeroSecRight,
+    .AboutPageOurStory > .AboutPageOurStoryLeft,
+    .AboutPageOurStory > .AboutPageOurStoryRight,
+    .choose > .chooseLeft,
+    .choose > .chooseRight {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    .vision,
+    .mission {
+        width: 90%;
+        margin: 20px 0;
+    }
+}
