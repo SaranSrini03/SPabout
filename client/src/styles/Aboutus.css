@@ -27,15 +27,14 @@ body {
 }
 
 .AboutPageHeroSec > .AboutPageHeroSecLeft > .title {
-    line-height: 70px;
-    font-size: 48px;
+    font-size: 38px;
+    line-height: 40px;
     color: var(--white);
     margin: 0px;
 }
 
 .AboutPageHeroSec > .AboutPageHeroSecLeft > .title > .title2 {
     line-height: 70px;
-    font-size: 48px;
     color: var(--green);
 }
 
@@ -59,7 +58,9 @@ body {
 .AboutPageHeroSec > .AboutPageHeroSecRight {
     width: 45%;
     height: 400px;
-    background-color: var(--gray);
+    /* background-color: var(--gray); */
+    background-image: url("../images/Rec2.png");
+    background-size: cover;
     border-radius: 20px;
     margin: 0px 30px;
 }
@@ -75,7 +76,9 @@ body {
 .AboutPageOurStory > .AboutPageOurStoryLeft {
     width: 40%;
     height: 400px;
-    background-color: var(--gray);
+    /* background-color: var(--green); */
+    background-image: url("../images/Rec1.png");
+    background-size: cover;
     border-radius: 20px;
     margin: 0px 30px;
 }
@@ -84,7 +87,7 @@ body {
     width: 45%;
     height: 400px;
     border-radius: 20px;
-    margin: 100px 10px;
+    margin: 50px 10px;
 }
 
 .AboutPageOurStory > .AboutPageOurStoryRight > .title {
@@ -123,11 +126,11 @@ body {
     width: 100%;
     height: 400px;
     margin-top: 50px;
-    text-align: center;
     flex-wrap: wrap;
 }
 
 .vision {
+    text-align: justify;
     margin: 150px;
     padding: 50px;
     height: 400px;
@@ -136,6 +139,7 @@ body {
 }
 
 .vision > .title {
+    text-align: center;
     font-size: 38px;
     color: var(--green);
 }
@@ -147,7 +151,8 @@ body {
 
 .mission > .title {
     font-size: 38px;
-    color: var (--green);
+    text-align: center;
+    color: var(--green)
 }
 
 .mission > .subtitle {
@@ -156,6 +161,7 @@ body {
 }
 
 .mission {
+    text-align: justify;
     height: 400px;
     padding: 50px;
     width: 400px;
@@ -166,13 +172,13 @@ body {
     display: flex;
     width: 90%;
     height: 400px;
-    margin: 120px;
+    margin: 350px 100px;
     flex-wrap: wrap;
 }
 
 .choose > .chooseLeft {
     margin: 250px 20px;
-    width: 45%;
+    width: 40%;
     height: 400px;
 }
 
@@ -193,34 +199,11 @@ body {
 .choose > .chooseRight {
     width: 45%;
     height: 400px;
-    background-color: var(--gray);
+    /* background-color: var(--gray); */
+    background-image: url("../images/Rec3.png");
+    background-size: cover;
     border-radius: 20px;
     margin: 50px 60px;
 }
 
-/* Media Queries */
-@media (max-width: 768px) {
-    .AboutPageHeroSec,
-    .AboutPageOurStory,
-    .choose {
-        flex-direction: column;
-        align-items: center;
-    }
 
-    .AboutPageHeroSec > .AboutPageHeroSecLeft,
-    .AboutPageHeroSec > .AboutPageHeroSecRight,
-    .AboutPageOurStory > .AboutPageOurStoryLeft,
-    .AboutPageOurStory > .AboutPageOurStoryRight,
-    .choose > .chooseLeft,
-    .choose > .chooseRight {
-        width: 100%;
-        height: auto;
-        margin: 10px 0;
-    }
-
-    .vision,
-    .mission {
-        width: 90%;
-        margin: 20px 0;
-    }
-}
