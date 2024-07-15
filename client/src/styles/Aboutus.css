@@ -11,39 +11,53 @@
 body {
     background-color: var(--black);
     font-family: "Lexend", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .AboutPageHeroSec {
     display: flex;
-    width: 90%;
-    height: 400px;
-    margin: 120px;
     flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 120px auto;
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecLeft {
+.AboutPageHeroSecLeft,
+.AboutPageHeroSecRight {
     width: 45%;
     height: 400px;
+    position: relative; 
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecLeft > .title {
+.AboutPageHeroSecRight {
+    background-image: url("../images/Rec2.png");
+    background-size: cover;
+    background-position: center; /* Center the image */
+    border-radius: 20px;
+    margin: 0 30px;
+}
+
+.AboutPageHeroSecLeft .title,
+.AboutPageHeroSecRight .title {
     font-size: 38px;
     line-height: 40px;
     color: var(--white);
-    margin: 0px;
+    margin: 0;
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecLeft > .title > .title2 {
+.AboutPageHeroSecLeft .title .title2 {
     line-height: 70px;
     color: var(--green);
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecLeft > .subtitle {
+.AboutPageHeroSecLeft .subtitle {
     color: var(--lightwhite);
     font-weight: 300;
+    text-align: justify;
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecLeft > button {
+.AboutPageHeroSecLeft button {
     color: var(--black);
     background-color: var(--green);
     border: none;
@@ -55,68 +69,56 @@ body {
     font-weight: bold;
 }
 
-.AboutPageHeroSec > .AboutPageHeroSecRight {
-    width: 45%;
-    height: 400px;
-    /* background-color: var(--gray); */
-    background-image: url("../images/Rec2.png");
-    background-size: cover;
-    border-radius: 20px;
-    margin: 0px 30px;
-}
-
 .AboutPageOurStory {
     display: flex;
-    width: 90%;
-    height: 400px;
-    margin: 100px;
+    text-align: justify;
     flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 100px auto;
 }
 
-.AboutPageOurStory > .AboutPageOurStoryLeft {
+.AboutPageOurStoryLeft {
     width: 40%;
     height: 400px;
-    /* background-color: var(--green); */
     background-image: url("../images/Rec1.png");
     background-size: cover;
+    background-position: center; /* Center the image */
     border-radius: 20px;
-    margin: 0px 30px;
+    margin: 0 30px;
 }
 
-.AboutPageOurStory > .AboutPageOurStoryRight {
+.AboutPageOurStoryRight {
     width: 45%;
     height: 400px;
     border-radius: 20px;
     margin: 50px 10px;
 }
 
-.AboutPageOurStory > .AboutPageOurStoryRight > .title {
+.AboutPageOurStoryRight .title,
+.ourValues .title,
+.vision .title,
+.mission .title,
+.chooseLeft .title {
     color: var(--green);
     font-size: 38px;
+    text-align: center;
 }
 
-.AboutPageOurStory > .AboutPageOurStoryRight > .subtitle {
+.AboutPageOurStoryRight .subtitle,
+.ourValues .subtitle,
+.vision .subtitle,
+.mission .subtitle,
+.chooseLeft .subtitle {
     color: var(--lightwhite);
     font-weight: 300;
 }
 
 .ourValues {
-    width: 100%;
+    width: 90%;
     height: 200px;
-    margin: 0px 100px;
-}
-
-.ourValues > .title {
+    margin: 0 100px;
     text-align: center;
-    color: var(--white);
-    font-size: 38px;
-}
-
-.ourValues > .subtitle {
-    text-align: center;
-    width: 50%;
-    margin: 0px 25%;
-    color: var(--lightwhite);
 }
 
 .visionMission {
@@ -124,86 +126,96 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 400px;
+    height: auto;
     margin-top: 50px;
     flex-wrap: wrap;
 }
 
-.vision {
-    text-align: justify;
-    margin: 150px;
-    padding: 50px;
-    height: 400px;
-    width: 400px;
-    background-color: var(--gray);
-}
-
-.vision > .title {
-    text-align: center;
-    font-size: 38px;
-    color: var(--green);
-}
-
-.vision > .subtitle {
-    color: var(--lightwhite);
-    font-weight: 300;
-}
-
-.mission > .title {
-    font-size: 38px;
-    text-align: center;
-    color: var(--green)
-}
-
-.mission > .subtitle {
-    color: var(--lightwhite);
-    font-weight: 300;
-}
-
+.vision,
 .mission {
     text-align: justify;
     height: 400px;
     padding: 50px;
     width: 400px;
     background-color: var(--gray);
+    border-radius: 20px;
 }
 
 .choose {
     display: flex;
-    width: 90%;
-    height: 400px;
-    margin: 350px 100px;
     flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+    margin: 350px auto;
 }
 
-.choose > .chooseLeft {
-    margin: 250px 20px;
+.chooseLeft {
     width: 40%;
-    height: 400px;
+    margin: 250px 20px;
 }
 
-.choose > .chooseLeft > .title {
-    text-align: right;
-    line-height: 38px;
-    font-size: 48px;
-    color: var(--white);
-    margin: 0px;
-}
-
-.choose > .chooseLeft > .subtitle {
-    text-align: right;
-    color: var(--lightwhite);
-    font-weight: 300;
-}
-
-.choose > .chooseRight {
+.chooseRight {
     width: 45%;
-    height: 400px;
-    /* background-color: var(--gray); */
     background-image: url("../images/Rec3.png");
     background-size: cover;
+    background-position: center; /* Center the image */
     border-radius: 20px;
     margin: 50px 60px;
 }
 
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .AboutPageHeroSec,
+    .AboutPageOurStory,
+    .choose {
+        flex-direction: column;
+        align-items: center;
+        margin: 50px auto;
+    }
 
+    .AboutPageHeroSecLeft,
+    .AboutPageHeroSecRight,
+    .AboutPageOurStoryLeft,
+    .AboutPageOurStoryRight,
+    .chooseLeft,
+    .chooseRight {
+        width: 80%;
+        margin: 20px 0;
+        height: auto;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 24px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+    }
+
+    .AboutPageHeroSecLeft button {
+        width: 120px;
+        height: 40px;
+    }
+
+    .vision,
+    .mission {
+        width: 100%;
+        margin: 20px 0;
+        height: auto;
+    }
+    .AboutPageHeroSecRight,.chooseRight,.AboutPageOurStoryLeft{
+        width: 200px;
+        height: 200px;
+        border-radius: 5px;
+    }
+}
